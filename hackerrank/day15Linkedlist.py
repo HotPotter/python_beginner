@@ -19,7 +19,6 @@ class Solution:
 
 
 
-
 mylist= Solution()
 T=int(input())
 head=None

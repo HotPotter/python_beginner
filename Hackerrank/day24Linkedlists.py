@@ -34,16 +34,6 @@ class Solution:
                     cur = cur.next
             return head
 
-            # cur_list=[]
-            # no_dup = []
-            # current = head
-            # while current:
-            #     cur_list.append(current.data)
-            #     current = current.next
-            # for i in cur_list:
-            #     if i not in no_dup:
-            #         no_dup.append(i)
-
 
 
 

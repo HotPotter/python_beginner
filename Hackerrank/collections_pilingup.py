@@ -5,10 +5,10 @@ from collections import deque
 def inp():
     d_len = input()
     d_inp = input()
-    return d_len, d_inp
+    return d_inp
 
 
-def d_create(d_len, d_inp):
+def d_create(d_inp):
     d_deque = deque(map(int,d_inp.split()))
     return d_deque
 
@@ -22,9 +22,9 @@ def pile(d_deque):
 
 
 def go():
-    d_len,d_inp = inp()
-    d_deque = d_create()
-    pile()
+    d_inp=inp()
+    d_deque = d_create(d_inp)
+    pile(d_deque)
 
 go()
 

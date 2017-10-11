@@ -1,7 +1,5 @@
 from collections import deque
 
-#num_case = input()
-#for _ in range(num_case)
 def inp():
     d_len = input()
     d_inp = input()
@@ -13,8 +11,10 @@ def d_create(d_inp):
     return d_deque
 
 def pile(d_deque):
-    while max(d_deque) in (d_deque[0] or d_deque[-1]):
+    while max(d_deque) in [d_deque[0],d_deque[-1]]:
         d_deque.remove(max(d_deque))
+        if len(d_deque)==0:
+            break
     if len(d_deque)==0:
         print("Yes")
     else:
